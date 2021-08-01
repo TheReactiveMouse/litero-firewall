@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "node-tunnel": "^4.0.1",
+    "prompt-sync": "^4.2.0",
+    "request": "^2.88.2",
+    "tunnel": "^0.0.6",
+    "url": "^0.11.0"
+  }
+}
