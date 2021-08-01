@@ -3,6 +3,9 @@ const fs = require('fs');
 const dns = require('dns');
 const server = net.createServer();
 const {Worker} = require("worker_threads");
+if (process.argv[3] == "github_test"){
+  console.log(true);
+}
 server.on('connection', (clientToProxySocket) => {
   console.log('[PROXY] Handling request...');
   // We need only the data once, the starting packet
