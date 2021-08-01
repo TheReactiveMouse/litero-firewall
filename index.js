@@ -35,7 +35,7 @@ server.on('connection', (clientToProxySocket) => {
 
     fs.readFile("rules.txt", encoding="utf-8", (err, result2) => {
       dns.resolve(serverAddress, callback=(err, result) => {
-        if (result2.includes(result) == true || result.contains(":8124") != true){
+        if (result2.includes(result) == true){
           let proxyToServerSocket = net.createConnection({
             host: serverAddress,
             port: serverPort
