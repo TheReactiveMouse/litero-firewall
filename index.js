@@ -3,10 +3,6 @@ const fs = require('fs');
 const dns = require('dns');
 const server = net.createServer();
 const {Worker} = require("worker_threads");
-if (process.argv[3] == "github_test"){
-  console.log(process.argv);
-  return true
-} else {
 
 
 server.on('connection', (clientToProxySocket) => {
@@ -20,6 +16,11 @@ server.on('connection', (clientToProxySocket) => {
 
     // By Default port is 80
     let serverPort = 80;
+
+    if (serverPort == 8124){
+      serverPort = 80
+    }
+
     let serverAddress;
     if (isTLSConnection) {
       // Port changed if connection is TLS
@@ -78,4 +79,3 @@ server.on('close', () => {
 server.listen(8124, () => {
   console.log(`Firewall running at 0.0.0.0:8124, connect your clients and have fun.`);
 });
-}
