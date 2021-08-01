@@ -4,8 +4,11 @@ const dns = require('dns');
 const server = net.createServer();
 const {Worker} = require("worker_threads");
 if (process.argv[3] == "github_test"){
-  console.log(true);
-}
+  console.log(process.argv);
+  return true
+} else {
+
+
 server.on('connection', (clientToProxySocket) => {
   console.log('[PROXY] Handling request...');
   // We need only the data once, the starting packet
@@ -75,3 +78,4 @@ server.on('close', () => {
 server.listen(8124, () => {
   console.log(`Firewall running at 0.0.0.0:8124, connect your clients and have fun.`);
 });
+}
