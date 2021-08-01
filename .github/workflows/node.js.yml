@@ -27,4 +27,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install express http http-proxy node-tunnel prompt-sync request tunnel url
-    - run: node index.js
+    - run: node index.js github_test
