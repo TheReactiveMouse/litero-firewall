@@ -8,6 +8,6 @@ An ultimate firewall that is ready to LOCK EVERYTHING that is not allowed in you
 - Set upon any distribution and you can make own version of servers with a firewall. Don't pay for TP-Link and Cisco firewalls! You can do more and free.
 # How to modify rules?
 1. Open rules.txt
-2. Add all sites IPs that is need to be allowed.
+2. Add all site IPs that are needed to be allowed.
 3. Save
 4. Close, done!
