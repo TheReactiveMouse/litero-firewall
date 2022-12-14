@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http": "^0.0.1-security",
     "http-proxy": "^1.18.1",
     "node-tunnel": "^4.0.1",
